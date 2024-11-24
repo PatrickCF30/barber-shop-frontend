@@ -1,0 +1,88 @@
+<header>
+  <div class="logo">
+    <img src="https://s3-alpha-sig.figma.com/img/0b5d/e3bf/c967ec2ca1a5be34a74528827f3dcc78?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PbydNXd0mrP2Z7KreuCeOK5MO0uTQ1SqyvG9l3Ch-vQi6toWBa7qMuZi-YkZafbzbNuRZe9El7QvUVK0y6YhzEw-elWlDKEqMaJhy~KCq-E9to-lgF1mth0mlrbypJp1SS08MsWFU98uFwPZsrcRmHZ2pSfUNXrOkZuAMw~2Uy8S8Jy0Qgmnm~8PjzEyhimpRrY0z8Q0yckwcj5yw5Oy6CZBXMlY~5GQ-snSD8t0l5qLraDR0qHkCXpyABPgFJzNDSl9aV7OocydmH7~Dtc4hcQF2hr0qmX1R~MOtn~Y8i3xuDFSbB-RurwdG0PNhlL0ekEie8zbb3pm7l5xpNs6bw__" width="20%" alt="Franco Bossi">
+  </div>
+  <nav>
+    <ul>
+      <li><a >Inicio</a></li>
+      <li><a >Servicios</a></li>
+      <li><a >Profesionales</a></li>
+      <li><a >Calendario</a></li>
+      <li><a >Turnos</a></li>
+      <li class="dropdown">
+        <a  class="dropbtn"> {{ username }}</a>
+        <div class="dropdown-content">
+          <a href="#">Ver perfil</a>
+          <a href="#">Configuración</a>
+          <a (click)="logout()">Cerrar sesión</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div class="generality">
+
+<section class="services">
+  <div class="service-card">
+    <div class="card-info">
+      <h3>Lavado + Corte</h3>
+      <p>Lavado + corte a máquina y/o tijera con acabado navaja</p>
+      <p class="price">$1.200</p>
+      <button class="choose-btn">Elegir</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="card-info">
+      <h3>Lavado + Peinado</h3>
+      <p>Lavado + peinado como quieras o como te aconsejamos</p>
+      <p class="price">$1.200</p>
+      <button class="choose-btn">Elegir</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="card-info">
+      <h3>Corte</h3>
+      <p>Corte con máquina</p>
+      <p class="price">$1.000</p>
+      <button class="choose-btn">Elegir</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="card-info">
+      <h3>Corte + Barba</h3>
+      <p>Corte + perfilado de barba</p>
+      <p class="price">$1.200</p>
+      <button class="choose-btn">Elegir</button>
+    </div>
+  </div>
+</section>
+
+<section class="professionals">
+  <h2>Profesionales</h2>
+  <div class="professional-card">
+    <img src="https://s3-alpha-sig.figma.com/img/223d/6b9d/0cf8582fed2744d690e0c631cdc4f84c?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ldr7ytxn0~xpCeVPkh983Lljh183NJWvY0ziz4nB0fAGYbLSC9oCXNBaPlbFuKu2mfbgO3hGtVfZrd-CwFZoIVhrE0mqZ3lfKihJAUKZrGd6R9av9mdEdrd6VEeWf2Dd7DqyYg-1ZOdGXAtiZ7HCNxbxwSczQkURj~WAtnzOyEJ~HdZrhmCdKEfHzuU2vKZbbQCqOjF7x0GaOQiJKxKrzkQ1VBeYC~haER1I7q8Mj-uVcuhKVFJf4~5jub3MkAkE90beLZDMuelZVHfRc1Xdk9t~QbEVd4PBojyaIdlGqO4JZOD2S63Y~1oQHlSlvcAtyhLXZvf1xeFtQEQ7zpt-8Q__" alt="Franco Bossi">
+    <p>Franco Bossi</p>
+  </div>
+  <div class="professional-card">
+    <img src="https://s3-alpha-sig.figma.com/img/77d3/bf09/66d5b03ee274813b02f579929d35dc94?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q9zkAcHKLOXtkJ2KlW77tFu0gB3fpVE9WsEgsOr6e0NpUeN5emcpNLG6gV-BQY~1fw~2AfR7ZaM59f27NqElVENz5shjYgtkbLLpEzAIReQ30luVdSYwLSeSp~vMzyQNi6N66fRm5C-aCsh6VWV41X6Nyb9xyenhrnoufbtiAg52nES5tW-EvLAxEMxejglS0v30Us55ypZQR~5tkCuVyxRIPs08JXBNqFBO4d-g7onzsap8yMC56FhTndqm~nT-fkiV3c6SwQ1NTG1F~0m0AZ4aYpyH4bnbnPvBj57SpWUBgGxN4Hw1CxPKQ9ZPrOgh3wd0ewd4tf5ViTNlDCAJIg__" alt="Sebastian Rubio">
+    <p>Sebastian Rubio</p>
+  </div>
+  <div class="professional-card">
+    <img src="https://s3-alpha-sig.figma.com/img/2ca2/ad7c/3160ee72a63a96cf0327be9c00469507?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z5BGh7dbea6XUVNVof3X-D-TzaDNjfwuWG42M-EZ15Y19Sxw1OgoeTSKorpsTCs-mpu7Ex9B5ZCS1enaisUZotu6HI00Qur66MJlQHUHPjfM-n~HHujJAp56qQYoAffjBsLPjsu17qKxqiDJaTEpTdpdAfFvuXB~O2GlqkzPOBSntl1xvpZpTkRSw8olZ0mM2mzCoGqv-1DAzJv~Of~4rPachNjHFsvTp7CfSfy8mFthfx11rHqCLRRQjqqTNwH7b8o-D2Aq6O8MdjRveddKp5g9tEkk-9eS4lgLk8mKfPTcaRpQ6N-k7AxObdm9eOdG0WRXUUFhAOEUTi91TwUqmw__" alt="Santiago Peloche">
+    <p>Santiago Peloche</p>
+  </div>
+  <div class="professional-card">
+    <img src="https://s3-alpha-sig.figma.com/img/358d/3898/201f8eb1a9573673b97c319579e94fd0?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i25oln3yHkPdsrWPE5fJDPfqXWFrG2xDRolfcMFfwpMuoY8DCNsa9srxmBe-qZsIrLX8stWLAeA6cM0x6cgzjW8y~psJTieQLi9cq~ie2V3RlsRsVRoHZji-y4TsQFt4Qbohk6vIBSRTTMOBax6uC0vdnnd1YxQSHBMBV4ssN5WCPNvnTe2-eNExeohR0GSefmEhdy-BpoxKmebQYxZIrEfyakFVyEy4h1BJOHd69nRA1Waxmhtfzm8LjkryUFFW1Wq3oA8iqKqV7TezkMN6R3yjbsi6UlTVVXo-OcbBrA8llle3xFzkauxge-7~62iWllmkHCghe19SLEIGdgSd8w__" alt="Franco Medrano">
+    <p>Franco Medrano</p>
+  </div>
+  <div class="professional-card">
+    <img src="https://s3-alpha-sig.figma.com/img/7f3c/6768/a38195e1cff6cc2be9d95d5fae891f31?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F3YBs4nQ8BPQaM~6gBnQUAspJiJvHlWohSHPrxANnMXT~EPzNeeEzoKrJnTu3XOsh6Rnj~TOJ~eJ1mHvL~vL6agRSOrbM3qfQDZF1KX3bRmL--G2ZXi5aVM7APloFZa6I2Uj1-VLIzUU5ShPYCo052Q51ZbXaLu1uZMG9A4LBqN8alst5ewTFfaQmRlGue4sS9Csy~8~RVRcI27NYcQa1pxY7eTFRrTp9nkC7GT8IVkMmd85uI6ovt5R9V~i3jfyvLxdvrJ5RvMmmHFb1AvfygsioVsadXH1wPYXN-D2c1pz-L~KnsuVPj9ebqNwJkgw7pywfxqIz~y47r7GyO10Vw__" alt="Martín García">
+    <p>Martín García</p>
+  </div>
+  <div class="professional-card">
+    <img src="https://s3-alpha-sig.figma.com/img/824d/7db8/336269cb2e2dc9c8379037978f74fae1?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V2byW4MpvJkbGyGFw4wY6kx26wZLbYBULf3lxQkpVOxiVdCUJP2WIFGPnQXj93iBCERGFcmE8D5YmIhLoHuBJ1vHYoq7jw4zNMMDtA6oJKPtPS-6TavFhvpXR6LiNxtnYgbfQdeLlvYyg-2LOah5si5zA8C02yWebeT~rK9RCKXplcwTWX6Zn-HFBf0O3BKhQIlUXn2RHgzeIFPt2-xgZvHW-g3Hh1B890vWv2q3TqitUoxjiRxEfPAlEVCIOOs4OKPz58KihpmFHRlqQpAr~iL2Klo5A6BUCuKMbs9JQpRGMfrBV1Fh3cwaRGcwGfj2QuA6FQ-TFnsevInxIudYtg__" alt="Laureano Torrá">
+    <p>Laureano Torrá</p>
+  </div>
+</section>
+</div>

@@ -1,0 +1,28 @@
+<div class="background">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Bienvenido</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="email"
+          placeholder="Correo"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Contraseña"
+          class="form-control"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Iniciar Sesión
+      </button>
+    </form>
+    <p class="terms">Si inicias sesión aceptarás los términos y condiciones</p>
+  </div>
+</div>

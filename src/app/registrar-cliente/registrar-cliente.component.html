@@ -1,0 +1,58 @@
+<div class="background">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Bienvenido</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="first_name"
+          placeholder="Nombre"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="last_name"
+          placeholder="Apellido"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="Nombre de usuario"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Contraseña"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Email"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="phone"
+          placeholder="Número de teléfono"
+          class="form-control"
+        />
+      </div>
+      <button type="submit" class="btn-primary">Registrar</button>
+    </form>
+    <p class="terms">Si inicias sesión aceptarás los términos y condiciones</p>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+/* Asegura que el body y el html ocupen el 100% de la altura */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para el contenedor principal */
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Asegura que ocupe toda la pantalla */
+  background: url('https://s3-alpha-sig.figma.com/img/08db/f6a5/3315318835cd1e691860a4ab1806ee76?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M1iyzmTQNgiHk-YcwrerwqnoQ-mACGlmM2-rMpQ~hm4VjP6nNgjXx9Di59Srtrk4hTUezwTb2ljCdO5ry7EdmNAn6W0njXBU3fDz8h6dhWZ1qTDMhfKlAM00ELNHV7Ac~gcfSrYwI7IyAjGpubQ0YTxIcnZDuwtFMtfzCZnd7-ECC9C6DOz-x4D30rqjdNxXVVDQkgXNPcbrEBpZ2dzFi0VJ2sxCchpYfKxhmQ1snW3DbBBYAFlJ461itYJJ0DwB9JmwtA7KJKvLyYGwGqUjVKeqCygWgtBhMTSzwf3GSP~8N7M01OnxpqS5vATQIg8smC6cVCKpHjbcE161PG4YiQ__') no-repeat center center/cover;
+}
+
+/* Oscurece el fondo */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Capa semi-transparente */
+}
+
+/* Contenido principal */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ocupa toda la altura disponible */
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 5.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #D8AB67;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #D8AB67;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #bbb;
+}
